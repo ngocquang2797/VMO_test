@@ -23,11 +23,11 @@ public:
 		physical=p;
 		chemistry=c;
 	}
-
+// b tính average
 	float avg(){
 		return (math+chemistry+physical)/3;
 	}
-
+// b xep hang student
 	string rank(){
 		float average = (math+chemistry+physical)/3;
 		if(average >=8.0) return "GIOI";

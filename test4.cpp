@@ -94,7 +94,6 @@ public:
                 j++;
             }
             if(up && down){
-                ret = max(j - i + 1, ret);
                 if(j-i+1>ret){
                     ret = j-i+1;
                     p.first = i;
@@ -107,6 +106,7 @@ public:
             cout<<a[i]<<" ";
         }
         cout<<endl;
+        // cout<<ret<<endl;
    }
 
 
