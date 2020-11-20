@@ -1,0 +1,4 @@
+select id, username, fullname, avatar from user_profile where id = 2 or id =3;
+
+-- select id, username, fullname, avatar from 
+
