@@ -1,0 +1,32 @@
+CREATE DATABASE tst6;
+USE tst6;
+
+
+CREATE TABLE user_profile(
+	id INT PRIMARY KEY,
+	username VARCHAR(20) NOT NULL,
+	fullname 	VARCHAR(30) NOT NULL,
+	password VARCHAR (15) NOT NULL,
+	avatar VARCHAR(25) DEFAULT NULL,
+	birthday TIMESTAMP DEFAULT NULL,
+	created_time TIMESTAMP NOT NULL
+);
+
+CREATE TABLE friend(
+	id INT PRIMARY KEY,
+	sender_id INT NOT NULL,
+	receiver_id INT NOT NULL,
+	status VARCHAR(15) ,
+	created_time TIMESTAMP NOT NULL,
+
+);
+
+CREATE TABLE message (
+	id INT PRIMARY KEY,
+	sender_id INT NOT NULL,
+	receiver_id INT NOT NULL,
+	type VARCHAR(10) NOT NULL,
+	content VARCHAR(50) DEFAULT NULL,
+	status VARCHAR(20)
+	created_time datetime
+);
